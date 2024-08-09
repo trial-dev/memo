@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>top</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+  <ul class="user-list">
+    <% for (const user of users) { %>
+      <li class="user-item">
+        <span class="user-name"><%= user %></span>
+        <form action="/api/user/<%= user %>/delete" method="POST" style="display:inline;">
+          <button type="submit" class="delete-button">削除</button>
+        </form>
+      </li>
+    <% } %>
+  </ul>
+  <input type="text" class="input-text" />
+  <button class="send-button">追加</button>
+  <script src="/static/index.js" defer></script>
+</body>
+
+</html>

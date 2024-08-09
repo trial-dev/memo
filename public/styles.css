@@ -1,0 +1,54 @@
+body {
+  font-family:Arial, sans-serif; 
+  background-color: #f0f8ff; 
+  color: #000000;
+}
+
+.user-list {
+  list-style-type: none; 
+  padding: 0;
+}
+
+.user-item {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.delete-button {
+  background-color: #ffd700; 
+  color: white; 
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px; 
+}
+
+.delete-button:hover {
+  background-color: #ffa500;
+}
+
+.input-text {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.send-button {
+  margin-top: 10px;
+  background-color: #00bfff; 
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.send-button:hover {
+  background-color: #1e90ff; 
+}
