@@ -1,10 +1,10 @@
-簡単なメモを作成した。
+#簡単なメモを作成した。
 講義でやった内容に削除ボタンを追加し、一度入力した内容を簡単に消せるようにしたことで買い物リストやtodoリストとして利用できるようにした。
 
 index.ejsでは削除ボタンを追加した。
-/*<form action="/api/user/<%= user %>/delete" method="POST" style="display:inline;">
+<form action="/api/user/<%= user %>/delete" method="POST" style="display:inline;">
           <button type="submit" class="delete-button">削除</button>
-        </form>*/
+        </form>
 
 このコードによって指定されたユーザー名それぞれで削除リクエストを送信するボタンを作成した。ボタンはユーザー名の右側にそれぞれ表示される。    
 
